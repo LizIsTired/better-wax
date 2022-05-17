@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "betterwax:block/yellow_wax_block"
+  }
+}

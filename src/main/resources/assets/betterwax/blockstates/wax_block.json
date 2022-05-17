@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "betterwax:block/wax_block"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "block.betterwax.wax_block": "Wax Block",
+  "block.betterwax.black_wax_block": "Black Wax Block",
+  "block.betterwax.blue_wax_block": "Blue Wax Block",
+  "block.betterwax.brown_wax_block": "Brown Wax Block",
+  "block.betterwax.cyan_wax_block": "Cyan Wax Block",
+  "block.betterwax.gray_wax_block": "Gray Wax Block",
+  "block.betterwax.green_wax_block": "Green Wax Block",
+  "block.betterwax.light_blue_wax_block": "Light Blue Wax Block",
+  "block.betterwax.light_gray_wax_block": "Light Gray Wax Block",
+  "block.betterwax.lime_wax_block": "Lime Wax Block",
+  "block.betterwax.magenta_wax_block": "Magenta Wax Block",
+  "block.betterwax.orange_wax_block": "Orange Wax Block",
+  "block.betterwax.pink_wax_block": "Pink Wax Block",
+  "block.betterwax.purple_wax_block": "Purple Wax Block",
+  "block.betterwax.red_wax_block": "Red Wax Block",
+  "block.betterwax.white_wax_block": "White Wax Block",
+  "block.betterwax.yellow_wax_block": "Yellow Wax Block",
+
+
+  "item.betterwax.wax_bucket": "Wax Bucket",
+
+  "itemGroup.betterwax.betterwax": "Better Wax"
+}

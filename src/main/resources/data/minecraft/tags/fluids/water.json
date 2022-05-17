@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values":
+  [
+    "betterwax:liquid_wax",
+    "betterwax:still_liquidwax",
+    "betterwax:flowing_liquidwax"
+  ]
+}

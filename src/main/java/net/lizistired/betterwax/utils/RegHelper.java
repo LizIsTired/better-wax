@@ -33,6 +33,7 @@ public class RegHelper {
     public static Block RED_WAX_BLOCK = new WaxBlock(FabricBlockSettings.copyOf(WAX_BLOCK).mapColor(MapColor.RED));
     public static Block WHITE_WAX_BLOCK = new WaxBlock(FabricBlockSettings.copyOf(WAX_BLOCK).mapColor(MapColor.WHITE));
     public static Block YELLOW_WAX_BLOCK = new WaxBlock(FabricBlockSettings.copyOf(WAX_BLOCK).mapColor(MapColor.YELLOW));
+    public static Item WAX_BUCKET;
 
 
 
@@ -43,7 +44,6 @@ public class RegHelper {
     })).icon(() -> new ItemStack(WAX_BLOCK)).build();
     public static FlowableFluid STILL_LIQUIDWAX;
     public static FlowableFluid FLOWING_LIQUIDWAX;
-    public static Item WAX_BUCKET = new BucketItem(STILL_LIQUIDWAX, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
     public static Block LIQUID_WAX;
 
 
@@ -79,6 +79,8 @@ public class RegHelper {
         LIQUID_WAX = Registry.register(Registry.BLOCK, new Identifier(namespace, "liquid_wax"), new FluidBlock(STILL_LIQUIDWAX, FabricBlockSettings.copy(Blocks.WATER)){});
     }
     void registerItems(){
+        Item WAX_BUCKET = new BucketItem(STILL_LIQUIDWAX, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1));
+        Registry.register(Registry.ITEM, new Identifier(namespace, "wax_bucket"), WAX_BUCKET);
         Registry.register(Registry.ITEM, new Identifier(namespace, "wax_block"), new BlockItem(WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
         Registry.register(Registry.ITEM, new Identifier(namespace, "black_wax_block"), new BlockItem(BLACK_WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
         Registry.register(Registry.ITEM, new Identifier(namespace, "blue_wax_block"), new BlockItem(BLUE_WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
@@ -96,6 +98,5 @@ public class RegHelper {
         Registry.register(Registry.ITEM, new Identifier(namespace, "red_wax_block"), new BlockItem(RED_WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
         Registry.register(Registry.ITEM, new Identifier(namespace, "white_wax_block"), new BlockItem(WHITE_WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
         Registry.register(Registry.ITEM, new Identifier(namespace, "yellow_wax_block"), new BlockItem(YELLOW_WAX_BLOCK, new FabricItemSettings().group(BETTERWAX_GROUP)));
-        Registry.register(Registry.ITEM, new Identifier(namespace, "wax_bucket"), WAX_BUCKET);
     }
 }

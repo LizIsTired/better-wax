@@ -12,7 +12,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
-public abstract class ExampleLiquid extends FlowableFluid {
+public abstract class BaseFlowableFluid extends FlowableFluid {
     /**
      * @return whether the given fluid an instance of this fluid
      */
